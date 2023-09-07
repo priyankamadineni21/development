@@ -25,10 +25,10 @@ export default {
 	handleGetArticle
 }
 */
-import { articleService } from "../services";
+import { cafeService } from "../services";
 
 export const handleGetArticle = () => {
-	return articleService.getArticles()
+	return cafeService.getArticles()
 }
 
 export default {

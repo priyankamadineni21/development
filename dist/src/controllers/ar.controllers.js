@@ -28,8 +28,8 @@ export default {
     handleGetArticle
 }
 */
-var services_1 = require("../services");
-var handleGetArticle = function () {
+const services_1 = require("../services");
+const handleGetArticle = () => {
     return services_1.articleService.getArticles();
 };
 exports.handleGetArticle = handleGetArticle;

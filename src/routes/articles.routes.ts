@@ -28,15 +28,15 @@ const articleRouter = async (app: FastifyInstance) => {
 export default articleRouter;
 */
 import { FastifyInstance } from "fastify"; // import FastifyInstance
-import articleController from '/home/priyanka2110/development/src/controllers/ar.controllers';
+import cafeController from '/home/priyanka2110/development/src/controllers/ar.controllers';
 
-const articleRouter = async (app: FastifyInstance) => {
+const cafeRouter = async (app: FastifyInstance) => {
 	// route api app.method("path", {option}, handler)
 	app.get(
 		"/",
 		// function handler
-		articleController.handleGetArticle
+		cafeController.handleGetArticle
 	);
 };
 
-export default articleRouter;
+export default cafeRouter;

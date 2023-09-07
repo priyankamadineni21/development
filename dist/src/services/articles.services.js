@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getArticles = void 0;
-var getArticles = function () {
-    var data = {
+const getArticles = () => {
+    const data = {
         id: "1",
         name: "node.js fastify",
         desc: "using services"

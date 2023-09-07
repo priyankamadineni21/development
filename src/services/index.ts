@@ -1,2 +1,2 @@
-import articleService from "./articles.services";
-export { articleService };
+import cafeService from "./articles.services";
+export { cafeService };
