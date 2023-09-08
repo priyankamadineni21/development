@@ -28,7 +28,7 @@ const articleRouter = async (app: FastifyInstance) => {
 export default articleRouter;
 */
 import { FastifyInstance } from "fastify"; // import FastifyInstance
-import cafeController from '/home/priyanka2110/development/src/controllers/ar.controllers';
+import cafeController from '../controllers/ar.controllers';
 
 const cafeRouter = async (app: FastifyInstance) => {
 	// route api app.method("path", {option}, handler)

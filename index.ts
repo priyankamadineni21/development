@@ -16,7 +16,8 @@ app.listen(PORT, (err) => {
 //import articleRouter from "/home/priyanka2110/development/src/routes/articles.routes";
 //------------------------actual-----------------------------------------
 
-import db from "./src/models";
+
+import sequelize from "./src/models";
 import App from "./src/app";
 import config from "./src/config/config";
 //import { createConnection } from "typeorm";
@@ -29,14 +30,15 @@ const app = App({
 })
 */
 //const PORT = 2000
-const PORT: string | number = config.port
-
-db.sequelize.sync().then(() =>{
-app.listen({port:Number(PORT)}, (err:any) => {
+// const PORT: string | number = config.port
+ //db.authenticate()
+ 
+sequelize.sync().then(() =>{
+app.listen({port:5000, host: '127.0.0.1'}, (err:any, address:any) => {
 	if (err) {
 		app.log.error(err);
-		// process.exit(1)
+		 process.exit(1)
 	}
-	app.log.info(`SERVE ON ${PORT}`)
+	app.log.info(`SERVE ON ${address}`)
 })
 })
